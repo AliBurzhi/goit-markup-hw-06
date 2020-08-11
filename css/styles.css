@@ -135,7 +135,8 @@ img {
   color: var(--accent-color);
 }
 
-.modal-btn {
+.modal-btn,
+.contact-form-btn {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -151,7 +152,9 @@ img {
 }
 
 .modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:focus,
+.contact-form-btn:hover,
+.contact-form-btn:focus {
   background-color: #188ce8;
 }
 
@@ -228,7 +231,8 @@ h1 {
   margin-bottom: 30px;
 }
 
-.modal-btn {
+.modal-btn,
+.contact-form-btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -591,7 +595,8 @@ h3 {
 }
 
 .footer-container-address {
-  margin-right: 60px;
+  margin-right: 69px;
+  margin-left: 475px;
 }
 
 .logo-footer-distance {
@@ -635,6 +640,10 @@ h3 {
   color: #ffffff;
   text-decoration: none;
   padding-top: 60px;
+}
+
+.footer-container-connect {
+  margin-right: 94px;
 }
 
 .social-links {
@@ -702,6 +711,73 @@ h3 {
 .footer-link-list:focus .footer-list-item-link-svg {
   fill: #ffffff;
 }
+
+/*FOOTER FORM */
+
+.footer-form {
+  margin-right: 470px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form-btn {
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.contact-form-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.text-footer-form {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 /* PORTFOLIO */
 
 .filter-list {
