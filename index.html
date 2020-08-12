@@ -473,6 +473,35 @@
           </form>
         </div>
       </div>
+
+      <div class="backdrop">
+        <form action="#" class="modal-form">
+          <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+          <div class="modal-form-input-wrapper">
+            <input type="text" name="user-name" id="user-modal-name" class="modal-form-input" placeholder=" " />
+            <label class="modal-form-label" for="user-modal-name">Имя</label>
+          </div>
+          
+          <div class="modal-form-input-wrapper">
+            <input type="tel" name="user-tel" id="user-modal-tel"class="modal-form-input" placeholder=" "/>
+            <label class="modal-form-label" for="user-modal-tel">Телефон</label>
+          </div>
+          <div class="modal-form-input-wrapper">
+            <input type="email" name="user-email" id="user-modal-email" class="modal-form-input" placeholder=" "/>
+            <label class="modal-form-label" for="user-modal-email">Почта</label>
+            </div>
+          <textarea
+            name=""
+            class="modal-form-message"
+            placeholder="Комментарий"
+          ></textarea>
+          <label class="modal-form-option-label">
+            <input type="checkbox" name="policy" value="accept-policy" class="modal-form-checkbox">
+            <span class="modal-form-option-span">Соглашаюсь с рассылкой и принимаю <a class="link-span-wind" href="#">Условия договора</a></span>
+          </label>
+          <button type="submit" class="modal-form-button">Отправить</button>
+      </div>
     </footer>
   </body>
 </html>
