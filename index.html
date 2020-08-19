@@ -491,9 +491,9 @@
               id="user-modal-name"
               class="modal-form-input"
               placeholder=" "
+              required
             />
             <label class="modal-form-label" for="user-modal-name">Имя</label>
-            <span class="modal-icon-svg-name-span">
               <svg class="modal-icon-svg-name">
                 <use href="./images/sprite.svg#icon-Vector"></use>
               </svg>
@@ -507,9 +507,9 @@
               id="user-modal-tel"
               class="modal-form-input"
               placeholder=" "
+              required
             />
-            <label class="modal-form-label" for="user-modal-tel">Телефон</label>
-            <span class="modal-icon-svg-name-span">
+            <label class="modal-form-label" for="user-modal-tel">Телефон</label>         
               <svg class="modal-icon-svg-name">
                 <use href="./images/sprite.svg#icon-Vector-1"></use>
               </svg>
@@ -522,9 +522,9 @@
               id="user-modal-email"
               class="modal-form-input"
               placeholder=" "
+              required
             />
-            <label class="modal-form-label" for="user-modal-email">Почта</label>
-            <span class="modal-icon-svg-name-span">
+            <label class="modal-form-label" for="user-modal-email">Почта</label>          
               <svg class="modal-icon-svg-name">
                 <use href="./images/sprite.svg#icon-Vector-2"></use>
               </svg>
@@ -535,23 +535,22 @@
             class="modal-form-message"
             placeholder="Комментарий"
           ></textarea>
+
           <label class="modal-form-option-label">
             <input
+              class="modal-form-checkbox"
               type="checkbox"
               name="policy"
               value="accept-policy"
-              class="modal-form-checkbox"
+              required 
             />
-            <span class="modal-form-custom-checkbox">
-              <svg class="modal-icon-checkbox">
-                <use href="./images/sprite.svg#icon-Vector-3"></use>
-              </svg>
-            </span>
+            <span class="modal-form-custom-checkbox"></span>
             <span class="modal-form-option-span"
               >Соглашаюсь с рассылкой и принимаю
               <a class="link-span-wind" href="#">Условия договора</a></span
             >
           </label>
+
           <button type="submit" class="modal-form-button">Отправить</button>
         </form>
       </div>
