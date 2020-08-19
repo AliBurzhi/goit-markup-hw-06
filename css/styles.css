@@ -1099,7 +1099,7 @@ h3 {
   color: #2196f3;
 }
 
-.modal-form-option-label {
+.label {
   display: flex;
   align-items: center;
 }
@@ -1126,7 +1126,7 @@ h3 {
   background-color: #188ce8;
 }
 
-.modal-form-checkbox {
+.checkbox {
   margin-right: 7px;
 }
 
@@ -1175,7 +1175,7 @@ h3 {
   fill: #188ce8;
 }
 
-.modal-form-checkbox {
+.checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1186,15 +1186,20 @@ h3 {
   overflow: hidden;
 }
 
-.modal-form-custom-checkbox {
-  display: inline-block;
+.icon {
+  display: flex;
   width: 15px;
   height: 15px;
   background: #ffffff;
   border: 2px solid #000000;
   margin-right: 7px;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-form-checkbox:checked + .modal-form-custom-checkbox {
-  background-image: url('/images/icon-check.svg');
+.checkbox:checked + .icon {
+  border: 0.2px solid #ffffff;
+  background: #2196f3;
+  border-radius: 2px;
+  background-image: url('/images/icon-check2.svg');
 }
