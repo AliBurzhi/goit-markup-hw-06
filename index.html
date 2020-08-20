@@ -392,7 +392,7 @@
     </main>
     <!--ПОДВАЛ САЙТА-->
     <footer class="footer">
-      <div class="container-footer">
+      <div class="container">
         <div class="footer-container-address">
           <div class="logo-footer-distance">
             <a class="logo-footer-link" href="index.html"
@@ -431,22 +431,26 @@
           <p class="desctext"><b class="footer-join-us">ПРИСОЕДИНЯЙТЕСЬ</b></p>
           <ul class="social-links list">
             <li class="social-links-item-link link">
-              <a class="footer-link-list" href="" aria-label="иконка инстаграма"
-                ><svg class="footer-list-item-link-svg">
+              <a
+                class="footer-link-list"
+                href=""
+                aria-label="иконка инстаграма"
+              >
+                <svg class="footer-list-item-link-svg">
                   <use href="./images/sprite.svg#icon-instagram1"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item-link link">
-              <a class="footer-link-list" href="" aria-label="иконка твиттера">
-                <svg class="footer-list-item-link-svg">
+              <a class="footer-link-list" href="" aria-label="иконка твиттера"
+                ><svg class="footer-list-item-link-svg">
                   <use href="./images/sprite.svg#icon-twitter1"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item-link link">
-              <a class="footer-link-list" href="" aria-label="иконка фейсбука"
-                ><svg class="footer-list-item-link-svg">
+              <a class="footer-link-list" href="" aria-label="иконка фейсбука">
+                <svg class="footer-list-item-link-svg">
                   <use href="./images/sprite.svg#icon-facebook1"></use>
                 </svg>
               </a>
@@ -468,6 +472,7 @@
               type="email"
               class="contact-form-input"
               placeholder="E-mail"
+              name="contact-form"
             />
             <button type="submit" class="contact-form-btn">Подписаться</button>
           </form>
@@ -494,10 +499,9 @@
               required
             />
             <label class="modal-form-label" for="user-modal-name">Имя</label>
-              <svg class="modal-icon-svg-name">
-                <use href="./images/sprite.svg#icon-Vector"></use>
-              </svg>
-            </span>
+            <svg class="modal-icon-svg-name">
+              <use href="./images/sprite.svg#icon-Vector"></use>
+            </svg>
           </div>
 
           <div class="modal-form-input-wrapper">
@@ -509,11 +513,10 @@
               placeholder=" "
               required
             />
-            <label class="modal-form-label" for="user-modal-tel">Телефон</label>         
-              <svg class="modal-icon-svg-name">
-                <use href="./images/sprite.svg#icon-Vector-1"></use>
-              </svg>
-            </span>
+            <label class="modal-form-label" for="user-modal-tel">Телефон</label>
+            <svg class="modal-icon-svg-name">
+              <use href="./images/sprite.svg#icon-Vector-1"></use>
+            </svg>
           </div>
           <div class="modal-form-input-wrapper">
             <input
@@ -524,31 +527,37 @@
               placeholder=" "
               required
             />
-            <label class="modal-form-label" for="user-modal-email">Почта</label>          
-              <svg class="modal-icon-svg-name">
-                <use href="./images/sprite.svg#icon-Vector-2"></use>
-              </svg>
-            </span>
+            <label class="modal-form-label" for="user-modal-email">Почта</label>
+            <svg class="modal-icon-svg-name">
+              <use href="./images/sprite.svg#icon-Vector-2"></use>
+            </svg>
           </div>
           <textarea
-            name="#"
+            name="textarea-form"
             class="modal-form-message"
             placeholder="Комментарий"
-          ></textarea>
-          <label class="label">
+          >
+          </textarea>
+          <div>
+
             <input
-              class="checkbox"
+              class="checkbox-input"
               type="checkbox"
-              name="policy"
+              name="policy" 
+              id="policy"
               value="accept-policy"
-              required 
+              required
             />
-            <span class="icon">
-            </span>
-            <span class="modal-form-option-span"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="link-span-wind" href="#">Условия договора</a></span>
-          </label>
+            <label class="label" for="policy">
+              <span class="icon"></span>
+              <span class="modal-form-option-span"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="link-span-wind" href="#">Условия договора</a>
+                </span
+              >
+            </label>
+          </div>
+          
           <button type="submit" class="modal-form-button">Отправить</button>
         </form>
       </div>
